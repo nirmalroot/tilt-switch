@@ -16,5 +16,12 @@ void loop() {
   vall=digitalRead(pin);
   Serial.println(vall);
   
-
+   if(vall==0){
+   digitalWrite(green,HIGH);
+   digitalWrite(red,LOW);  
+    }
+   If(vall==1){
+   digitalWrite(green,LOW);
+   digitalWrite(red,HIGH);  
+   }
 }
